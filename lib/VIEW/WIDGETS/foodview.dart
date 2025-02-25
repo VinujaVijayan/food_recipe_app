@@ -30,7 +30,7 @@ class Foodview extends StatelessWidget {
                 Card(
                   elevation: 5,
                   child: Container(
-                    height: 100,
+                    height: 150,
                     width: double.infinity,
                     decoration: BoxDecoration(
                         image: DecorationImage(
@@ -55,9 +55,9 @@ class Foodview extends StatelessWidget {
                         icon: wishcontrol.iswishListed(foods)
                             ? Icon(
                                 Icons.favorite,
-                                color: Mycolor.primarycolor,
+                                color: Colors.red,
                               )
-                            : Icon(Icons.favorite_border)),
+                            : Icon(Icons.favorite_border,size: 30.0,)),
                   );
                 }),
               ]),

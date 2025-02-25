@@ -10,7 +10,7 @@ class Categoryscreen extends StatelessWidget {
     'Dinner',
     'Juice',
     'snack',
-    'Main course',
+    
   ];
 
   @override

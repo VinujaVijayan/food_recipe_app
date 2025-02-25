@@ -13,24 +13,26 @@ class Navpage extends StatelessWidget {
       body: SafeArea(
         child: Obx(() => control.mypages[control.selectedIndex.value]),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(
-        shape:
-            CircleBorder(side: BorderSide(color: Mycolor.forthcolor, width: 2)),
-        backgroundColor: Mycolor.primarycolor,
-        onPressed: () {
-          Get.to(() => StaggeredGridScreen());
-        },
-        child: Icon(
-          Icons.food_bank,
-          color: Mycolor.forthcolor,
-        ),
-      ),
+      //floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButton: FloatingActionButton(
+      //   shape:
+      //       CircleBorder(side: BorderSide(color: Mycolor.forthcolor, width: 2)),
+      //   backgroundColor: Mycolor.primarycolor,
+      //   onPressed: () {
+      //     Get.to(() => StaggeredGridScreen());
+      //   },
+      //   child: Icon(
+      //     Icons.food_bank,
+      //     color: Mycolor.forthcolor,
+      //   ),
+      // ),
       bottomNavigationBar: Obx(
         () => BottomAppBar(
           height: 100,
+        
           shape: CircularNotchedRectangle(),
-          notchMargin: 10.0,
+          notchMargin: 15.0,
+          
           child: BottomNavigationBar(
             currentIndex: control.selectedIndex.value,
             onTap: control.onItemtap,

@@ -21,7 +21,7 @@ class Categoryscreen extends StatelessWidget {
           gridDelegate:
               SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
           itemBuilder: (context, index) {
-            print("Building index: $index");
+           // print("Building index: $index");
             return CategoryRefract(index: index, category: foodCategory[index]);
           }),
     );

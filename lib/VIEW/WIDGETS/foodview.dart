@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/CONTROLLER/wishlistcontrol.dart';
 import 'package:food_recipe_app/MODEL/foodmodel.dart';
-import 'package:food_recipe_app/UTILS/mycolor.dart';
+
 import 'package:food_recipe_app/VIEW/detailspage.dart';
 
 import 'package:get/get.dart';

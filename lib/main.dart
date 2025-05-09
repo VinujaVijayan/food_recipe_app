@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_recipe_app/VIEW/splashpage.dart';
 import 'package:get/get.dart';
 
-
-
 void main(){
-  runApp(Myapp());
+  runApp( Myapp());
 }
 
 class Myapp extends StatelessWidget{

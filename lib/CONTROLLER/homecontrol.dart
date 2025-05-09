@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 class Homecontrol extends GetxController {
   RxBool isLoading = true.obs;
   RxList<Food> FoodList = <Food>[].obs;
+  
   RxList<Food> filteredFoodList = <Food>[].obs;
 
   @override
@@ -14,6 +15,7 @@ class Homecontrol extends GetxController {
     dataLoad();
   }
 
+//loading
   void dataLoad() {
     Timer(Duration(seconds: 3), () {
       FoodList.value = foodList;
@@ -21,7 +23,7 @@ class Homecontrol extends GetxController {
       isLoading.value = false;
     });
   }
-
+//search bar
   void search(String query) {
     if (query.isEmpty) {
       filteredFoodList.value = foodList;

@@ -11,8 +11,7 @@ class FilteredfoodListpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Food> filteredfood =
-        foodList.where((food) => food.category == categorylist).toList();
+    List<Food> filteredfood =foodList.where((food) => food.category == categorylist).toList();
     return Scaffold(
         appBar: AppBar(
           title: Text('$categorylist Items'),
